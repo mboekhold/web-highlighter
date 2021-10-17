@@ -1,6 +1,9 @@
 {
   "extName": {
-    "message": "web-extension",
+    "message": "Web Highlighter",
     "description": ""
+  },
+  "extDescription": {
+    "message": "Create and manage highlights on the web"
   }
 }
