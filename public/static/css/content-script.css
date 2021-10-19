@@ -1,0 +1,99 @@
+.sx-selection-highlighted {
+    position: relative;
+    padding: 1px;
+}
+/* .sx-highlight-remove {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    content: "\274c";
+   bottom: 0px;
+    left: -5px;
+    height: 15px;
+    font-size: 10px;
+    width: 15px;
+} */
+
+.sx-highlight-popover {
+    /* padding: 1px 0px; */
+    padding-bottom: 8px;
+    position: absolute;
+    top: -45px;
+    left: 0px;
+    z-index: 1000;
+}
+.sx-highlight-popover-content {
+    position: relative;
+    background-color: white;
+    width: 75px;
+    height: 37px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgb(189, 189, 189) 1px 1px 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(119, 119, 119);
+    border-image: initial;
+    border-radius: 4px;
+    padding: 1px 0px;
+}
+.sx-highlight-popover::after {
+    top: 80%;
+    left: 50%;
+    content: " ";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    pointer-events: none;
+    border-style: solid;
+    border-image: initial;
+    margin-left: -5px;
+    border-color: white rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    border-width: 5px;
+    z-index: 0;
+}
+.sx-highlight-popover::before {
+    top: 80%;
+    left: 50%;
+    display: block;
+    content: " ";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    pointer-events: none;
+    border-style: solid;
+    border-image: initial;
+    margin-left: -6px;
+    border-color: rgb(119, 119, 119) rgba(119, 119, 119, 0) rgba(119, 119, 119, 0);
+    border-width: 6px;
+    z-index: 0;
+}
+.sx-highlight-seperator {
+    display: inline-block;
+    height: 22px;
+    width: 0px;
+    border-right: 1px solid rgb(191, 191, 191);
+}
+.sx-highlight-remove:hover {
+    cursor: pointer;
+}
+
+.sx-highlight-remove::after {
+    content: "\274c";
+    position: absolute;
+    background: none;
+    left: -1px;
+    top: -1px;
+}
+.action-icon {
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+    margin-top: 2px;
+    color: #636363
+}
+.action-icon:hover {
+    cursor: pointer;
+    color: #414141
+}
