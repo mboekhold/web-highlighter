@@ -15,7 +15,7 @@
         <button v-if="color != currentColor"
         :style="{ 'background-color': color}"
         class="color-button"
-        @click="selectColor()">
+        @click="selectColor(color)">
       </button>
       </div>
     </div>
@@ -44,6 +44,13 @@ export default {
   methods: {
     selectColor (color) {
       // Select color
+      chrome.storage.sync.set({ color })
+      chrome.tabs.query({}, function (tabs) {
+        for (let i = 0; i < tabs.length; i++) {
+          chrome.tabs.sendMessage(tabs[i].id, { color: color })
+        }
+      })
+      this.$router.push({ name: 'Home' })
     }
   }
 }
