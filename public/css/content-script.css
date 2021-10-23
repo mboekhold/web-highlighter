@@ -25,7 +25,7 @@
 .sx-highlight-popover-content {
     position: relative;
     background-color: white;
-    width: 75px;
+    width: 70px;
     height: 37px;
     display: flex;
     justify-content: space-around;
@@ -89,7 +89,7 @@
 .action-icon {
     height: 25px;
     width: 25px;
-    margin-left: 5px;
+    /* margin-left: 5px; */
     margin-top: 2px;
     color: #636363
 }

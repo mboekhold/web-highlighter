@@ -63,7 +63,8 @@ export default {
   width: 20px;
   height: 20px;
   position: absolute;
-  left: 5;
+  left: 5px;
+  top: 5px;
 }
 .title {
   font-size: 18px;
